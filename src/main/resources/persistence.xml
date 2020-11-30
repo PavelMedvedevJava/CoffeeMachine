@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+          http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="CoffeeDB">
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-247-94-127.eu-west-1.compute.amazonaws.com:5432/d6a2nucfbc6urv?sslmode=require" />
+            <property name="javax.persistence.jdbc.user" value="mrexwuwsonhmcj" />
+            <property name="javax.persistence.jdbc.password" value="3a06ad6c9f59fe98278ac594af29cddbba9c073e626d851da5d2ca774e9b5e1f" />
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.ProgressDialect"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
